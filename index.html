@@ -380,6 +380,17 @@
   @media (max-width:560px){
     .stats.four{grid-template-columns:repeat(2,1fr);}
   }
+  /* phones: fix chrome overlap + respect notch / home-bar safe areas */
+  @media (max-width:680px){
+    .hud{font-size:.64rem; letter-spacing:.1em;}
+    .hud.tl{top:calc(1.1rem + env(safe-area-inset-top)); left:calc(1.1rem + env(safe-area-inset-left));}
+    .hud.tl span:last-child{display:none;}  /* drop "// GOVERNANCE PLANE" */
+    .hud.br{top:calc(1.1rem + env(safe-area-inset-top)); right:calc(1.1rem + env(safe-area-inset-right));}
+    .arrows{display:none;}                    /* swipe handles navigation */
+    .dots{bottom:calc(1rem + env(safe-area-inset-bottom)); gap:.3rem;}
+    .dots button{padding:6px;}
+    .slide{padding-left:max(1.6rem, env(safe-area-inset-left)); padding-right:max(1.6rem, env(safe-area-inset-right)); padding-bottom:4.5rem;}
+  }
   /* short viewports: don't vertically clip — scroll from the top */
   @media (max-height:680px){
     .slide{justify-content:flex-start; padding-top:clamp(3rem,8vh,5rem); padding-bottom:5rem;}
