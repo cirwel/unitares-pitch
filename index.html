@@ -325,8 +325,8 @@
   .stat .big.amber{color:var(--amber);}
   .stat .cap{font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-top:.55rem; line-height:1.4;}
 
-  /* three planes diagram */
-  .planes{display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:2.6rem; border:1px solid var(--line-2);}
+  /* planes diagram */
+  .planes{display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:2.6rem; border:1px solid var(--line-2);}
   .plane{padding:1.8rem 1.6rem 2rem; border-right:1px solid var(--line); position:relative;}
   .plane:last-child{border-right:none;}
   .plane .pnum{font-family:var(--mono); font-size:.7rem; color:var(--muted-2); letter-spacing:.2em;}
@@ -474,12 +474,13 @@
     <!-- 5 — WHAT IT IS -->
     <section class="slide">
       <div class="reveal eyebrow"><span>WHAT UNITARES IS</span><span class="idx">04 / THE GOVERNANCE LAYER</span></div>
-      <h2 class="reveal">One layer. <em>Three planes.</em></h2>
-      <p class="reveal lede wide">Every agent in your fleet gets a provable identity, a continuous sense of its own state, and a governor that can guide, pause, or recover it.</p>
+      <h2 class="reveal">One layer. <em>Four planes.</em></h2>
+      <p class="reveal lede wide">Every agent in your fleet gets a provable identity, a shared memory the whole fleet writes to, a continuous sense of its own state, and a governor that can guide, pause, or recover it.</p>
       <div class="reveal planes">
         <div class="plane"><div class="pnum">PLANE 01</div><h3 class="ph">Identity</h3><p>Provable, tiered identity and lineage that survives across processes — so every action in the tree is attributable.</p></div>
-        <div class="plane"><div class="pnum">PLANE 02</div><h3 class="am">Proprioception</h3><p>The EISV state vector — the agent's health signals — updated every turn. Drift, degradation, and risk become measurable in real time.</p></div>
-        <div class="plane"><div class="pnum">PLANE 03</div><h3 class="ph">Oversight</h3><p>A governor that issues verdicts, escalates to independent review, and recovers agents that fall out of their healthy operating range.</p></div>
+        <div class="plane"><div class="pnum">PLANE 02</div><h3 class="am">Memory</h3><p>A shared, provenance-tagged knowledge graph — what one agent learns, the fleet keeps. Every value labeled measured, derived, or prior, with supersession and lineage as live graph edges.</p></div>
+        <div class="plane"><div class="pnum">PLANE 03</div><h3 class="ph">Proprioception</h3><p>The EISV state vector — the agent's health signals — updated every turn. Drift, degradation, and risk become measurable in real time.</p></div>
+        <div class="plane"><div class="pnum">PLANE 04</div><h3 class="am">Oversight</h3><p>A governor that issues verdicts, escalates to independent review, and recovers agents that fall out of their healthy operating range.</p></div>
       </div>
       <p class="reveal mono-note" style="margin-top:1.7rem; letter-spacing:.05em">SHIPS AS &nbsp;→&nbsp; MCP server · agent SDK · live dashboard · coordination plane · ops bridge</p>
     </section>
